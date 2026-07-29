@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuickBooks Disconnection</title>
 
-<title>Disconnect</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
 
-body{
-font-family:Arial;
-background:#f4f7fb;
-margin:0;
-}
+        header {
+            background-color: #0077c5;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
 
-header{
-background:#0077C5;
-color:white;
-padding:30px;
-text-align:center;
-}
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 34px;
+        }
 
-.container{
-width:80%;
-margin:auto;
-margin-top:40px;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.15);
-}
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+        }
 
-h2{
-color:#0077C5;
-}
+        h2 {
+            color: #0077c5;
+        }
 
-footer{
-text-align:center;
-margin:40px;
-color:#777;
-}
+        .notice {
+            background-color: #fff7e6;
+            border-left: 5px solid #e09b20;
+            padding: 18px;
+            margin: 25px 0;
+        }
 
-</style>
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+        }
 
+        a {
+            color: #0077c5;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #667;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-
-<h1>QuickBooks Disconnected</h1>
-
+    <h1>QuickBooks Connection Disconnected</h1>
+    <p>QuickBooks Hours App</p>
 </header>
 
-<div class="container">
+<main>
+    <h2>Disconnection information</h2>
 
-<h2>Connection Removed</h2>
+    <p>
+        The connection between QuickBooks Online and QuickBooks Hours App has
+        been disconnected.
+    </p>
 
-<p>
-The connection between QuickBooks Online and QuickBooks Hours App has been disconnected.
-</p>
+    <div class="notice">
+        After disconnection, the application will no longer be able to retrieve
+        updated information from the connected QuickBooks Online company.
+    </div>
 
-<p>
-To reconnect the application, please access the system and complete the authorization process again.
-</p>
+    <p>
+        To reconnect the application, an authorized user must access the internal
+        QuickBooks Hours App and complete the QuickBooks Online authorization
+        process again.
+    </p>
 
-<p>
-For assistance, contact the system administrator of Ingenierías Jorge & Asociados.
-</p>
+    <p>
+        For assistance with the disconnection or reconnection process, contact
+        the system administrator of Ingenierías Jorge &amp; Asociados.
+    </p>
 
-</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="connect.html">Connect or reconnect</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="eula.html">Terms of Use</a>
+    </div>
+</main>
 
 <footer>
-
-© 2026 Ingenierías Jorge & Asociados
-
+    &copy; 2026 Ingenierías Jorge &amp; Asociados. All rights reserved.
 </footer>
 
 </body>
-
 </html>
