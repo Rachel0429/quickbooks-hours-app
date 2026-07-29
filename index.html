@@ -1,77 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QuickBooks Hours App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fb;
-    color:#333;
-}
+    <title>QuickBooks Hours App</title>
 
-header{
-    background:#0077C5;
-    color:white;
-    padding:30px;
-    text-align:center;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.container{
-    width:80%;
-    margin:auto;
-    background:white;
-    margin-top:40px;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-}
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
 
-h2{
-    color:#0077C5;
-}
+        header {
+            background-color: #0077c5;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
 
-footer{
-    text-align:center;
-    margin:40px;
-    color:#777;
-}
-</style>
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
 
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+        }
+
+        h2 {
+            color: #0077c5;
+        }
+
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+        }
+
+        a {
+            color: #0077c5;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #667;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<h1>QuickBooks Hours App</h1>
-<p>Ingenierías Jorge & Asociados</p>
+    <h1>QuickBooks Hours App</h1>
+    <p>Ingenierías Jorge &amp; Asociados</p>
 </header>
 
-<div class="container">
+<main>
+    <h2>About the application</h2>
 
-<h2>Welcome</h2>
+    <p>
+        QuickBooks Hours App is an internal business application developed for
+        Ingenierías Jorge &amp; Asociados.
+    </p>
 
-<p>
-QuickBooks Hours App is an internal web application developed for Ingenierías Jorge & Asociados.
-</p>
+    <p>
+        The application allows authorized company personnel to consult employee,
+        project and worked-hours information obtained from QuickBooks Online.
+        It also supports administrative and accounting reports related to employee
+        and project costs.
+    </p>
 
-<p>
-The application allows authorized users to consult employee information, projects, worked hours, and cost reports by integrating QuickBooks Online with the company's MariaDB database.
-</p>
+    <p>
+        Access to the application is restricted to authorized internal users.
+        QuickBooks information is accessed only after the corresponding company
+        authorization process has been completed.
+    </p>
 
-<p>
-This application is intended exclusively for internal administrative and accounting use.
-</p>
-
-</div>
+    <div class="links">
+        <a href="connect.html">Connect or reconnect</a>
+        <a href="disconnect.html">Disconnect information</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="eula.html">Terms of Use</a>
+    </div>
+</main>
 
 <footer>
-
-© 2026 Ingenierías Jorge & Asociados
-
+    &copy; 2026 Ingenierías Jorge &amp; Asociados. All rights reserved.
 </footer>
 
 </body>
