@@ -1,83 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect to QuickBooks Online</title>
 
-<title>Connect QuickBooks</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
 
-body{
-font-family:Arial;
-background:#f4f7fb;
-margin:0;
-}
+        header {
+            background-color: #0077c5;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
 
-header{
-background:#0077C5;
-padding:30px;
-color:white;
-text-align:center;
-}
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 34px;
+        }
 
-.container{
-width:80%;
-margin:auto;
-margin-top:40px;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.15);
-}
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+        }
 
-h2{
-color:#0077C5;
-}
+        h2 {
+            color: #0077c5;
+        }
 
-footer{
-text-align:center;
-margin:40px;
-color:#777;
-}
+        .notice {
+            background-color: #eef7fc;
+            border-left: 5px solid #0077c5;
+            padding: 18px;
+            margin: 25px 0;
+        }
 
-</style>
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+        }
 
+        a {
+            color: #0077c5;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #667;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-
-<h1>Connect to QuickBooks Online</h1>
-
+    <h1>Connect to QuickBooks Online</h1>
+    <p>QuickBooks Hours App</p>
 </header>
 
-<div class="container">
+<main>
+    <h2>Connection and reconnection information</h2>
 
-<h2>Connection Information</h2>
+    <p>
+        QuickBooks Hours App connects to QuickBooks Online to retrieve authorized
+        employee, project and worked-hours information for internal administrative
+        and accounting purposes.
+    </p>
 
-<p>
-QuickBooks Hours App uses QuickBooks Online to retrieve employee, project, and worked hours information.
-</p>
+    <p>
+        To connect or reconnect QuickBooks Online, an authorized user must sign in
+        to the internal QuickBooks Hours App and select the option to connect with
+        QuickBooks.
+    </p>
 
-<p>
-Authorized users can establish or reconnect the connection through the application following the company's authentication process.
-</p>
+    <div class="notice">
+        Only users authorized by Ingenierías Jorge &amp; Asociados may initiate or
+        renew the connection with the company’s QuickBooks Online account.
+    </div>
 
-<p>
-If you need assistance, please contact the system administrator of Ingenierías Jorge & Asociados.
-</p>
+    <p>
+        During the authorization process, the user will be redirected to Intuit
+        to sign in and approve the requested access. After authorization, the user
+        will return to the internal application.
+    </p>
 
-</div>
+    <p>
+        For assistance, contact the system administrator of Ingenierías Jorge
+        &amp; Asociados.
+    </p>
+
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="disconnect.html">Disconnect information</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="eula.html">Terms of Use</a>
+    </div>
+</main>
 
 <footer>
-
-© 2026 Ingenierías Jorge & Asociados
-
+    &copy; 2026 Ingenierías Jorge &amp; Asociados. All rights reserved.
 </footer>
 
 </body>
-
 </html>
